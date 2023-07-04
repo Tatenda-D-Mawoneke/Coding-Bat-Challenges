@@ -22,7 +22,7 @@ describe("frontTimes", () => {
     const result = frontTimes("Abc", 3);
     assert.equal(result, "AbcAbcAbc");
   });
-  it("should return 'AbAbAb' when passed Abc and n = 3", () => {
+  it("should return 'AbAbAb' when passed Ab and n = 3", () => {
     const result = frontTimes("Ab", 3);
     assert.equal(result, "AbAbAb");
   });
