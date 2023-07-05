@@ -19,8 +19,8 @@ describe("firstLast6", () => {
     const result = firstLast6([6, 1, 2, 3]);
     assert.deepEqual(result, true);
   });
-  it("should return false if 6 is the first or last element in an array", () => {
-    const result = firstLast6([6, 1, 2, 3]);
-    assert.deepEqual(result, true);
+  it("should return false if 6 is not the first or last element in an array", () => {
+    const result = firstLast6([13, 6, 1, 2, 3]);
+    assert.deepEqual(result, false);
   });
 });
