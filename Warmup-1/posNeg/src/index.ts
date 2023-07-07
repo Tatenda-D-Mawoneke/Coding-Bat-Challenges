@@ -5,16 +5,10 @@
 // posNeg(-4, -5, true) → true
 
 export function posNeg(num1: number, num2: number, negative: boolean): boolean {
-  // attempt 2:
-  let myResult: boolean = false;
+  // attempt 3:
   const myNum1 = Math.sign(num1);
   const myNum2 = Math.sign(num2);
-
-  if (myNum1 * myNum2 == -1 && !negative) {
-    myResult = true;
-  }
-  if (myNum1 * myNum2 == 1 && negative) {
-    myResult = true;
-  }
-  return myResult;
+  return (
+    (myNum1 * myNum2 == -1 && !negative) || (myNum1 * myNum2 == 1 && negative)
+  );
 }
