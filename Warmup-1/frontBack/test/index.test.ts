@@ -16,7 +16,7 @@ describe("frontBack", () => {
     const result = frontBack("a");
     assert.equal(result, "a");
   });
-  it("should return 'ab' when passed 'ab", () => {
+  it("should return 'ba' when passed 'ab", () => {
     const result = frontBack("ab");
     assert.equal(result, "ba");
   });
