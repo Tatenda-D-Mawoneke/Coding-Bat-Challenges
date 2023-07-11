@@ -16,7 +16,7 @@ describe("notString", () => {
     const result = notString("x");
     assert.equal(result, "not x");
   });
-  it("should return 'not candy' when the parameter value is 'not bad'", () => {
+  it("should return 'not candy' when the parameter value is 'not candy'", () => {
     const result = notString("not bad");
     assert.equal(result, "not bad");
   });
