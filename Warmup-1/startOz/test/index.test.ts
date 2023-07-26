@@ -20,4 +20,8 @@ describe("startOz", () => {
     const result = startOz("oxx");
     assert.equal(result, "o");
   });
+  it("should return an empty string when given 'random' as the first character is not o and the second character is not a z", () => {
+    const result = startOz("random");
+    assert.equal(result, "");
+  });
 });
