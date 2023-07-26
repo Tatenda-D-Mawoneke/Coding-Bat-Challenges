@@ -15,7 +15,7 @@ describe("mixStart", () => {
   });
   it("should return false when string is 'pix snacks'", () => {
     const result = mixStart("pix snacks");
-    assert.equal(result, false);
+    assert.equal(result, true);
   });
   it("should return false when string is 'piz snacks'", () => {
     const result = mixStart("piz snacks");

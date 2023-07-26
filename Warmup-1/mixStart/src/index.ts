@@ -1,5 +1,5 @@
 export function mixStart(myString: string): boolean {
-  const myArray = [...myString].slice(0, 3);
+  const myArray = [...myString].slice(1, 3);
   const myArrayStringified = myArray.join("");
-  return myArrayStringified === "mix" ? true : false;
+  return myArrayStringified === "ix" ? true : false;
 }
