@@ -1,9 +1,14 @@
-export function loneTeen(givenInput1: number, givenInput2: number): boolean {
-  const givenInput1IsTeen = givenInput1 >= 13 && givenInput1 <= 19;
-  const givenInput2IsTeen = givenInput2 >= 13 && givenInput2 <= 19;
+export function loneTeen(age1: number, age2: number): boolean {
+  const age1IsTeen = isTeenChecker(age1);
+  const age2IsTeen = isTeenChecker(age2);
 
-  return (givenInput1IsTeen && !givenInput2IsTeen) ||
-    (!givenInput1IsTeen && givenInput2IsTeen)
-    ? true
-    : false;
+  return age1IsTeen && age2IsTeen ? false : true;
+}
+
+function isTeenChecker(age: number): boolean {
+  if (age >= 13 && age <= 19) {
+    return true;
+  } else {
+    return false;
+  }
 }
