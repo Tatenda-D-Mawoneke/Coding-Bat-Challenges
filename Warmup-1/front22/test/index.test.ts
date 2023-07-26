@@ -19,4 +19,8 @@ describe("front22", () => {
     const result = front22("abc");
     assert.equal(result, "ababcab");
   });
+  it("should return 'aaa' when passed the string 'a'", () => {
+    const result = front22("a");
+    assert.equal(result, "aaa");
+  });
 });
