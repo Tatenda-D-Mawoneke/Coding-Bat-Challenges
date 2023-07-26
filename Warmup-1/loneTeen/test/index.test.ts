@@ -21,7 +21,7 @@ describe("loneTeen", () => {
     assert.equal(result, false);
   });
   it("should return false when the given value (12, 12) as both are not teens", () => {
-    const result = loneTeen(13, 13);
+    const result = loneTeen(12, 12);
     assert.equal(result, false);
   });
 });
