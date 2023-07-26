@@ -20,4 +20,12 @@ describe("delDel", () => {
     const result = delDel("adedbc");
     assert.equal(result, "adedbc");
   });
+  it("should return return 'delabc' when passed 'delabc' keeping the string unchanged", () => {
+    const result = delDel("delabc");
+    assert.equal(result, "delabc");
+  });
+  it("should return return 'abc' when passed 'abcdel'  removing the del", () => {
+    const result = delDel("abcdel");
+    assert.equal(result, "abc");
+  });
 });
