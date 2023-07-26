@@ -2,7 +2,7 @@ export function loneTeen(age1: number, age2: number): boolean {
   const age1IsTeen = isTeenChecker(age1);
   const age2IsTeen = isTeenChecker(age2);
 
-  return age1IsTeen && age2IsTeen ? false : true;
+  return age1IsTeen != age2IsTeen;
 }
 
 function isTeenChecker(age: number): boolean {

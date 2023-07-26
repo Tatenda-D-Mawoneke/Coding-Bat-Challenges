@@ -16,7 +16,11 @@ describe("loneTeen", () => {
     const result = loneTeen(21, 19);
     assert.equal(result, true);
   });
-  it("should return false when the given value (13, 13) is not within the range of 13..19 inclusive", () => {
+  it("should return false when the given value (13, 13) as both are teens", () => {
+    const result = loneTeen(13, 13);
+    assert.equal(result, false);
+  });
+  it("should return false when the given value (12, 12) as both are not teens", () => {
     const result = loneTeen(13, 13);
     assert.equal(result, false);
   });
