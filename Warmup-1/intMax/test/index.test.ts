@@ -17,7 +17,7 @@ describe("intMax", () => {
     assert.equal(result, 3);
   });
   it("should return the largest value 3 when passed 3,2,1", () => {
-    const result = intMax(3, 2, 3);
+    const result = intMax(3, 2, 1);
     assert.equal(result, 3);
   });
 });
