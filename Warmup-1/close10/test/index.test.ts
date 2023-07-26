@@ -18,6 +18,10 @@ describe("close10", () => {
   });
   it("should return 0 when given 13, 7 both numbers are equally close to 10", () => {
     const result = close10(13, 7);
-    assert.equal(result, 8);
+    assert.equal(result, 0);
+  });
+  it("should return 9 when given 8, 9 as 9 is closer to 10", () => {
+    const result = close10(8, 9);
+    assert.equal(result, 9);
   });
 });

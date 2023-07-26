@@ -1,11 +1,19 @@
-export function close10(givenInput1: number, givenInput2: number): number {
-  const givenInput1Modulo10 = givenInput1 % 10;
-  const givenInput2Modulo10 = givenInput2 % 10;
-  if (givenInput1Modulo10 < givenInput2Modulo10) {
-    return givenInput2;
-  } else if (givenInput2Modulo10 < givenInput1Modulo10) {
-    return givenInput1;
-  } else {
-    return 0;
+export function close10(input1: number, input2: number): number {
+  // const input1Modulo10 = Math.abs(input1 % 10);
+  // const input2Modulo10 = Math.abs(input2 % 10);
+  // if (input1Modulo10 < input2Modulo10) {
+  //   return input2;
+  // } else if (input2Modulo10 < input1Modulo10) {
+  //   return input1;
+  // }
+  // return 0;
+
+  const input1Remainder = Math.abs(10 - input1);
+  const input2Remainder = Math.abs(10 - input2);
+  if (input1Remainder < input2Remainder) {
+    return input1;
+  } else if (input2Remainder < input1Remainder) {
+    return input2;
   }
+  return 0;
 }
