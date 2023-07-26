@@ -22,4 +22,8 @@ describe("startHi", () => {
     const result = startHi("hello hi");
     assert.equal(result, false);
   });
+  it("should return false when string doesn't starts with hi (Hi there)", () => {
+    const result = startHi("Hi there");
+    assert.equal(result, false);
+  });
 });
