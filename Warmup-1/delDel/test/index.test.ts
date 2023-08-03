@@ -16,7 +16,7 @@ describe("delDel", () => {
     const result = delDel("adelHello");
     assert.equal(result, "aHello");
   });
-  it("should return return 'adedbc' when passed 'adedbc' keeping the string unchanged", () => {
+  it("should return return 'adedbc' when passed 'adedbc' ", () => {
     const result = delDel("adedbc");
     assert.equal(result, "adedbc");
   });
@@ -24,8 +24,8 @@ describe("delDel", () => {
     const result = delDel("delabc");
     assert.equal(result, "delabc");
   });
-  it("should return return 'abc' when passed 'abcdel'  removing the del", () => {
+  it("should return return 'abcdel' when passed 'abcdel' keeping the string unchanged", () => {
     const result = delDel("abcdel");
-    assert.equal(result, "abc");
+    assert.equal(result, "abcdel");
   });
 });

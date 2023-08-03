@@ -1,6 +1,8 @@
-export function delDel(givenInput: string): string {
-  if (givenInput.includes("del", 1)) {
-    return givenInput.replace("del", "");
+export function delDel(myString: string): string {
+  const mySubString = myString[1] + myString[2] + myString[3];
+
+  if (mySubString == "del") {
+    return myString.replace("del", "");
   }
-  return givenInput;
+  return myString;
 }
