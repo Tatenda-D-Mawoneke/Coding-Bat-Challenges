@@ -5,14 +5,18 @@
 // max1020(11, 9) → 11
 
 export function max1020(num1: number, num2: number): number {
-  if (num1 > num2) {
-    if (num1 >= 10 && num1 <= 20) {
-      return num1;
-    }
-  } else if (num2 > num1) {
-    if (num2 >= 10 && num2 <= 20) {
-      return num2;
-    }
-  }
-  return 0;
+  const num1InRange = numWithinRange(num1);
+  const num2InRange = numWithinRange(num2);
+
+  return num1InRange && num2InRange
+    ? Math.max(num1, num2)
+    : num1InRange && !num2InRange
+    ? num1
+    : num2InRange && !num1InRange
+    ? num2
+    : 0;
+}
+
+function numWithinRange(num: number): boolean {
+  return num >= 10 && num <= 20;
 }
