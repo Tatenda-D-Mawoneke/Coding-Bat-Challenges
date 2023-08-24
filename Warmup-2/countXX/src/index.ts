@@ -7,9 +7,9 @@
 export function countXX(word: string): number {
   let count = 0;
   const wordArray: string[] = [...word];
-  wordArray.forEach(function (value, i) {
-    if (value == "x") {
-      if (wordArray[i + 1] == "x") {
+  wordArray.forEach(function (char, index) {
+    if (char == "x") {
+      if (wordArray[index + 1] == "x") {
         count++;
       }
     }

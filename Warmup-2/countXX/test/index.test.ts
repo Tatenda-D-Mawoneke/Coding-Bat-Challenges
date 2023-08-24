@@ -20,4 +20,12 @@ describe("countXX", () => {
     const result = countXX("xxxx");
     assert.equal(result, 3);
   });
+  it("should return '0' when passed 'No double x here'", () => {
+    const result = countXX("No double x here");
+    assert.equal(result, 0);
+  });
+  it("should return '5' when passed 'xxx there are some xx in this xxx string'", () => {
+    const result = countXX("xxx there are some xx in this xxx string");
+    assert.equal(result, 5);
+  });
 });
