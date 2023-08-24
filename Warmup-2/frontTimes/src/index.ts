@@ -5,6 +5,16 @@
 // frontTimes("Abc", 3) → "AbcAbcAbc"
 
 export function frontTimes(word: string, mupltiple: number): string {
-  const first3 = word[0] + word[1] + word[2];
-  return first3.repeat(mupltiple);
+  let phrase: string = ''
+  let count = 0;
+  for (const char of word) {
+    if (count == 3) {
+      break
+    }
+    else {
+      phrase += char
+      count++
+    }
+  }
+  return phrase.repeat(mupltiple)
 }

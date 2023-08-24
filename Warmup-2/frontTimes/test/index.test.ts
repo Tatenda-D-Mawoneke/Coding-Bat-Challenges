@@ -20,4 +20,12 @@ describe("frontTimes", () => {
     const result = frontTimes("Abc", 3);
     assert.equal(result, "AbcAbcAbc");
   });
+  it("should return 'AB' when passed 'Chocolate' and '2'", () => {
+    const result = frontTimes("AB", 2);
+    assert.equal(result, "ABAB");
+  });
+  it("should return 'Test' when passed 'Abc' and '1'", () => {
+    const result = frontTimes("Test", 1);
+    assert.equal(result, "Tes");
+  });
 });
