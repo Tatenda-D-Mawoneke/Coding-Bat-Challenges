@@ -7,9 +7,9 @@
 export function doubleX(word: string): boolean {
   let doubleXFound = false;
   const wordArray = [...word];
-  wordArray.forEach(function (value, i) {
-    if (value == "x") {
-      if (wordArray[i + 1] == "x") {
+  wordArray.forEach(function (char, index) {
+    if (char == "x") {
+      if (wordArray[index + 1] == "x") {
         doubleXFound = true;
         return doubleXFound;
       }

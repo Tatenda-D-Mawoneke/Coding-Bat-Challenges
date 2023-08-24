@@ -20,4 +20,8 @@ describe("doubleX", () => {
     const result = doubleX("xxxxx");
     assert.equal(result, true);
   });
+  it("should return false when passed 'no instance here'", () => {
+    const result = doubleX("no instance here");
+    assert.equal(result, false);
+  });
 });
