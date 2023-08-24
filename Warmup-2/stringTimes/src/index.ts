@@ -4,6 +4,6 @@
 // stringTimes("Hi", 3) → "HiHiHi"
 // stringTimes("Hi", 1) → "Hi"
 
-export function stringTimes(word: string, factor: number): string {
-  return word.repeat(factor);
+export function stringTimes(word: string, multiple: number): string {
+  return word.repeat(multiple);
 }

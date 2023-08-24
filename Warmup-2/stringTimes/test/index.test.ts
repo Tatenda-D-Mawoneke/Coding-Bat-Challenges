@@ -20,4 +20,12 @@ describe("stringTimes", () => {
     const result = stringTimes("Hi", 1);
     assert.equal(result, "Hi");
   });
+  it("should return '' when passed '' and '3'", () => {
+    const result = stringTimes("", 3);
+    assert.equal(result, "");
+  });
+  it("should return 'HHH' when passed 'H' and '3'", () => {
+    const result = stringTimes("H", 3);
+    assert.equal(result, "HHH");
+  });
 });
