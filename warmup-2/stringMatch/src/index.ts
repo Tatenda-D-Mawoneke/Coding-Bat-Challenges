@@ -5,20 +5,20 @@
 // stringMatch("abc", "axc") → 0
 
 export function stringMatch(a: string, b: string): number {
-  let count = 0;
-  const aCharArray = [...a];
-  const bCharArray = [...b];
-  for (let index = 0; index < a.length; index++) {
-    const firstAChar = a[index];
-    const firstBChar = b[index];
+   let count = 0;
 
-    if (firstAChar == firstBChar) {
-      const secondAChar = a[index + 1];
-      const secondBChar = b[index + 1];
-      if (secondAChar == secondBChar && secondAChar != undefined) {
-        count++;
+   for (let index = 0; index < a.length; index++) {
+      const firstAChar = a[index];
+      const firstBChar = b[index];
+
+      if (firstAChar == firstBChar) {
+         const secondAChar = a[index + 1];
+         const secondBChar = b[index + 1];
+
+         if (secondAChar == secondBChar && secondAChar != undefined) {
+            count++;
+         }
       }
-    }
-  }
-  return count;
+   }
+   return count;
 }

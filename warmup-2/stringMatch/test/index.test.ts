@@ -8,24 +8,24 @@ import { stringMatch } from "../src";
 // stringMatch("abc", "axc") → 0
 
 describe("stringMatch", () => {
-  it("should return 3 when passed 'xxcaazz' and 'xxbaaz'", () => {
-    const result = stringMatch("xxcaazz", "xxbaaz");
-    assert.equal(result, 3);
-  });
-  it("should return 2 when passed 'abc' and 'abc'", () => {
-    const result = stringMatch("abc", "abc");
-    assert.equal(result, 2);
-  });
-  it("should return 0 when passed 'abc' and 'axc'", () => {
-    const result = stringMatch("abc", "axc");
-    assert.equal(result, 0);
-  });
-  it("should return 1 when passed 'ab' and 'ab'", () => {
-    const result = stringMatch("ab", "ab");
-    assert.equal(result, 1);
-  });
-  it("should return 0 when passed '' and ''", () => {
-    const result = stringMatch("", "");
-    assert.equal(result, 0);
-  });
+   it("should return 3 when passed 'xxcaazz' and 'xxbaaz'", () => {
+      const result = stringMatch("xxcaazz", "xxbaaz");
+      assert.equal(result, 3);
+   });
+   it("should return 2 when passed 'abc' and 'abc'", () => {
+      const result = stringMatch("abc", "abc");
+      assert.equal(result, 2);
+   });
+   it("should return 0 when passed 'abc' and 'axc'", () => {
+      const result = stringMatch("abc", "axc");
+      assert.equal(result, 0);
+   });
+   it("should return 1 when passed 'ab' and 'ab'", () => {
+      const result = stringMatch("ab", "ab");
+      assert.equal(result, 1);
+   });
+   it("should return 0 when passed '' and ''", () => {
+      const result = stringMatch("", "");
+      assert.equal(result, 0);
+   });
 });
