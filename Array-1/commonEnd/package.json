@@ -1,0 +1,19 @@
+{
+  "name": "commonend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "tsc && mocha dist/test"
+  },
+  "author": "Tatenda D Mawoneke",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.6",
+    "@types/typescript": "^2.0.0",
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,5 +1,6 @@
-import { assert } from "chai"
-import wihtoutX2 from "../src"
+import { assert } from 'chai';
+import { describe } from 'mocha';
+import wihtoutX2 from '../src';
 
 
 describe("",()=>{

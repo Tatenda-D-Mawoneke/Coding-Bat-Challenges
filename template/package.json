@@ -1,12 +1,13 @@
 {
-  "name": "sleepin",
+  "name": "something",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "test": "tsc && mocha dist/test",
     "build": "tsc"
   },
-  "author": "",
+  "author": "Tatenda D. Mawoneke",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.3.5",
