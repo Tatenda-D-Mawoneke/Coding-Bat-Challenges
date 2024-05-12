@@ -1,3 +1,3 @@
-export function commonEnd (input: string){
-    return input
+export function commonEnd(input: string) {
+	return input;
 }
