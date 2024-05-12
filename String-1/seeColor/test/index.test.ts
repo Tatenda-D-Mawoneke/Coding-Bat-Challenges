@@ -1,18 +1,23 @@
-import { assert } from "chai"
-import seeColor from "../src"
+import { assert } from "chai";
+import seeColor from "../src";
 
+// Given a string, if the string begins with "red" or "blue" return that color string, otherwise return the empty string.
 
-describe("seeColor",()=>{
-    it("return red",()=>{
-        const result = seeColor("redxx")
-        assert.equal(result, "red")
-    })
-    it("return ''",()=>{
-        const result = seeColor("xxred")
-        assert.equal(result, "")
-    })
-    it("return blue",()=>{
-        const result = seeColor("blueTimes")
-        assert.equal(result, "blue")
-    })
-})
+// seeColor("redxx") → "red"
+// seeColor("xxred") → ""
+// seeColor("blueTimes") → "blue"
+
+describe("seeColor", () => {
+	it("Should return 'red' when given 'redxx'", () => {
+		const result = seeColor("redxx");
+		assert.equal(result, "red");
+	});
+	it("Should return '' when given 'xxred'", () => {
+		const result = seeColor("xxred");
+		assert.equal(result, "");
+	});
+	it("Should return 'blue' when given 'blueTimes'", () => {
+		const result = seeColor("blueTimes");
+		assert.equal(result, "blue");
+	});
+});
