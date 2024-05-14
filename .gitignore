@@ -167,3 +167,4 @@ dist
 .pnp.\*
 
 .DS_Store
+template/
