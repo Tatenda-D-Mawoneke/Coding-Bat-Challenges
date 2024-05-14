@@ -167,6 +167,5 @@ dist
 .pnp.\*
 
 .DS_Store
-template/
 create.cmd
 filenames.txt
