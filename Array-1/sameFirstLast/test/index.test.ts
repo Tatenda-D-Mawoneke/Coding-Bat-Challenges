@@ -1,15 +1,27 @@
-// Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. Both arrays will be length 1 or more.
-
 import { assert } from "chai";
-import { commonEnd } from "../src/index.js";
+import { sameFirstLast } from "../src/index.js";
 
-// commonEnd([1, 2, 3], [7, 3]) → true
-// commonEnd([1, 2, 3], [7, 3, 2]) → false
-// commonEnd([1, 2, 3], [1, 3]) → true
+// Given an array of ints, return true if the array is length 1 or more, and the first element and the last element are equal.
 
-describe("Template", () => {
-	it("Should true when given two arrays of ints and they have the same first element or same last element", () => {
-		const result = commonEnd("A");
-		assert.equal(result, "A");
+// sameFirstLast([1, 2, 3]) → false
+// sameFirstLast([1, 2, 3, 1]) → true
+// sameFirstLast([1, 2, 1]) → true
+
+describe("sameFirstLast", () => {
+	it("Should return false when given [1, 2, 3]", () => {
+		const result = sameFirstLast([1, 2, 3]);
+		assert.equal(result, false);
+	});
+	it("Should return true when given [1, 2, 3,1]", () => {
+		const result = sameFirstLast([1, 2, 3, 1]);
+		assert.equal(result, true);
+	});
+	it("Should return false when given [1, 2, 1]", () => {
+		const result = sameFirstLast([1, 2, 1]);
+		assert.equal(result, true);
+	});
+	it("Should return true when given [2]", () => {
+		const result = sameFirstLast([2]);
+		assert.equal(result, true);
 	});
 });
