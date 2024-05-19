@@ -1,3 +1,3 @@
-export function commonEnd(input: string) {
-	return input;
+export function makePi(): number[] {
+	return [3, 1, 4];
 }
