@@ -1,15 +1,25 @@
-// Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. Both arrays will be length 1 or more.
-
 import { assert } from "chai";
-import { commonEnd } from "../src/index.js";
+import { middleWay } from "../src/index.js";
 
-// commonEnd([1, 2, 3], [7, 3]) → true
-// commonEnd([1, 2, 3], [7, 3, 2]) → false
-// commonEnd([1, 2, 3], [1, 3]) → true
+/*
+Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.
 
-describe("Template", () => {
-	it("Should true when given two arrays of ints and they have the same first element or same last element", () => {
-		const result = commonEnd("A");
-		assert.equal(result, "A");
+middleWay([1, 2, 3], [4, 5, 6]) → [2, 5]
+middleWay([7, 7, 7], [3, 8, 0]) → [7, 8]
+middleWay([5, 2, 9], [1, 4, 5]) → [2, 4]
+*/
+
+describe("middleWay", () => {
+	it("Should return [2, 5] when given [1, 2, 3], [4, 5, 6]", () => {
+		const result = middleWay([1, 2, 3], [4, 5, 6]);
+		assert.deepEqual(result, [2, 5]);
+	});
+	it("Should return [7, 8] when given [1, 2, 3], [4, 5, 6]", () => {
+		const result = middleWay([7, 7, 7], [3, 8, 0]);
+		assert.deepEqual(result, [7, 8]);
+	});
+	it("Should return [2, 4] when given [1, 2, 3], [4, 5, 6]", () => {
+		const result = middleWay([5, 2, 9], [1, 4, 5]);
+		assert.deepEqual(result, [2, 4]);
 	});
 });
