@@ -1,15 +1,23 @@
-// Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. Both arrays will be length 1 or more.
-
 import { assert } from "chai";
-import { commonEnd } from "../src/index.js";
+import { maxEnd3 } from "../src/index.js";
 
-// commonEnd([1, 2, 3], [7, 3]) → true
-// commonEnd([1, 2, 3], [7, 3, 2]) → false
-// commonEnd([1, 2, 3], [1, 3]) → true
+// Given an array of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value. Return the changed array.
 
-describe("Template", () => {
-	it("Should true when given two arrays of ints and they have the same first element or same last element", () => {
-		const result = commonEnd("A");
-		assert.equal(result, "A");
+// maxEnd3([1, 2, 3]) → [3, 3, 3]
+// maxEnd3([11, 5, 9]) → [11, 11, 11]
+// maxEnd3([2, 11, 3]) → [3, 3, 3]
+
+describe("maxEnd3", () => {
+	it("Should return [3,3,3] when given [1,2,3]", () => {
+		const result = maxEnd3([1, 2, 3]);
+		assert.deepEqual(result, [3, 3, 3]);
+	});
+	it("Should return [11, 11, 11] when given [11, 5, 9]", () => {
+		const result = maxEnd3([11, 5, 9]);
+		assert.deepEqual(result, [11, 11, 11]);
+	});
+	it("Should return [3,3,3] when given [2, 11, 3]", () => {
+		const result = maxEnd3([2, 11, 3]);
+		assert.deepEqual(result, [3, 3, 3]);
 	});
 });
