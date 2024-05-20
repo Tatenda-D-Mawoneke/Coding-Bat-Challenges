@@ -1,15 +1,23 @@
-// Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. Both arrays will be length 1 or more.
-
 import { assert } from "chai";
-import { commonEnd } from "../src/index.js";
+import { reverse3 } from "../src/index.js";
 
-// commonEnd([1, 2, 3], [7, 3]) → true
-// commonEnd([1, 2, 3], [7, 3, 2]) → false
-// commonEnd([1, 2, 3], [1, 3]) → true
+// Given an array of ints length 3, return a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
+
+// reverse3([1, 2, 3]) → [3, 2, 1]
+// reverse3([5, 11, 9]) → [9, 11, 5]
+// reverse3([7, 0, 0]) → [0, 0, 7]
 
 describe("Template", () => {
-	it("Should true when given two arrays of ints and they have the same first element or same last element", () => {
-		const result = commonEnd("A");
-		assert.equal(result, "A");
+	it("Should return [3,2,1] when given [1,2,3]", () => {
+		const result = reverse3([1, 2, 3]);
+		assert.deepEqual(result, [3, 2, 1]);
+	});
+	it("Should return [9, 11, 5] when given [5, 11, 9]", () => {
+		const result = reverse3([5, 11, 9]);
+		assert.deepEqual(result, [9, 11, 5]);
+	});
+	it("Should return [0, 0, 7] when given [7, 0, 0]", () => {
+		const result = reverse3([7, 0, 0]);
+		assert.deepEqual(result, [0, 0, 7]);
 	});
 });

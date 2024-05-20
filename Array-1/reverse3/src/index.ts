@@ -1,3 +1,3 @@
-export function commonEnd(input: string) {
-	return input;
+export function reverse3(input: number[]): number[] {
+	return input.reverse();
 }
