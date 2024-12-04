@@ -1,3 +1,9 @@
-export function commonEnd(input: number): number {
-	return
+export function dateFashion(you: number, date: number): number {
+	if (you <= 2 || date <= 2) {
+		return 0;
+	}
+
+	if (you >= 8 || date >= 8) {
+		return 2;
+	} else return 1;
 }
