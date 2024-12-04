@@ -9,5 +9,4 @@ export function conCat(input1: string, input2: string): string {
 	}
 
     return output1 + output2
-	console.log();
 }
